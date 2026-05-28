@@ -2,7 +2,7 @@
 
 A reduced-form Credit Default Swap pricer with hazard-rate bootstrapping from market spreads, plus a follow-up CS01 sensitivity analysis.
 
-> **Context**: this project was completed as part of a graduate Financial Engineering coursework module on credit risk measurement and management. The base pricer was a group deliverable; the CS01 follow-up notebook is an extension done individually.
+> **Context**: this project was completed as part of a graduate Financial Engineering coursework module on credit risk measurement and management. The base pricer was the deliverable; the CS01 follow-up notebook is an extension done individually.
 
 The base pricer (`cds_pricer.ipynb`) bootstraps a piecewise-constant hazard curve from 10 market CDS spreads via Newton-Raphson with an analytic Jacobian, then prices a non-standard seasoned 30Y CDS with off-cycle quarterly payments. A follow-up notebook (`cs01_analysis.ipynb`) extends this to compute parallel and key-rate CS01 sensitivities across the curve. The full mathematical methodology, derivations, and discussion are in `report.pdf`.
 
